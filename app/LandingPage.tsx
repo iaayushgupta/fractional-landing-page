@@ -272,7 +272,7 @@ export default function LandingPage() {
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               <Member name="Aayush Gupta" role="Data Scientist" url="https://www.linkedin.com/in/aayush-gupta-925442190/"/>
               <Member name="Manish" role="Data Engineer" url="https://www.linkedin.com/in/manish004/"/>
-              <Member name="Ankit Rajput" role="ETL & Model QA" url="https://www.linkedin.com/in/ankit-rajput-6178b6203/"/>
+              <Member name="Ankit Yadav" role="ETL & Model QA" url="https://www.linkedin.com/in/ankit-yadav-bb7352103/"/>
             </div>
           </div>
         </section>
