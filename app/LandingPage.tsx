@@ -1,5 +1,5 @@
 export default function LandingPage() {
-  // Updated nav to match the new sections (mobile-safe: hides on small screens)
+  // Updated nav to match the new sections
   const nav = [
     { href: "#data-eng", label: "Data Engineering" },
     { href: "#ai-eng", label: "AI Engineering" },
@@ -71,13 +71,13 @@ export default function LandingPage() {
   ];
 
   return (
-    // LIGHT THEME + better mobile rendering
+    // Light theme + mobile-friendly spacing/typography
     <div className="min-h-screen bg-gradient-to-b from-slate-50 via-white to-slate-50 text-slate-900">
       {/* Header */}
       <header className="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="h-16 flex items-center justify-between">
-            <a href="#" className="flex items-center gap-2">
+            <a href="/" className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-xl bg-emerald-500/10 ring-1 ring-emerald-500/30 flex items-center justify-center">
                 <svg viewBox="0 0 24 24" className="h-5 w-5">
                   <path d="M4 17l6-10 4 7 6-9" fill="none" stroke="currentColor" strokeWidth="2" />
@@ -109,10 +109,10 @@ export default function LandingPage() {
               <a href="#packages" className="rounded-xl bg-emerald-500 text-white px-5 py-3 font-semibold">
                 View Packages
               </a>
-              {/* Removed the “Get the 4-week plan” button per your request */}
+              {/* Removed timeline CTA per your request */}
             </div>
 
-            {/* KPIs — stacks nicely on mobile */}
+            {/* KPIs — stack cleanly on mobile */}
             <div className="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 text-sm">
               <Stat kpi="<1%" label="Pipeline failure" />
               <Stat kpi="8–20%" label="Typical forecast error (MAPE)" />
@@ -166,7 +166,7 @@ export default function LandingPage() {
         </div>
       </section>
 
-      {/* Packages (unchanged section id; content updated above) */}
+      {/* Packages */}
       <section id="packages" className="bg-slate-50 border-y border-slate-200">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-16">
           <div className="flex items-end justify-between">
@@ -203,8 +203,6 @@ export default function LandingPage() {
           </div>
         </div>
       </section>
-
-      {/* Removed the “4-week delivery plan” section as requested */}
 
       {/* Case Studies */}
       <section id="case-studies" className="bg-slate-50 border-y border-slate-200">
@@ -298,7 +296,7 @@ export default function LandingPage() {
               >
                 Email us
               </a>
-              {/* Calendly button removed per your request */}
+              {/* Calendly button removed */}
             </div>
           </div>
         </div>
@@ -326,15 +324,9 @@ export default function LandingPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-slate-600 flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} DataHarness</div>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-emerald-600">
-              Privacy
-            </a>
-            <a href="#" className="hover:text-emerald-600">
-              Terms
-            </a>
-            <a href="#team" className="hover:text-emerald-600">
-              Team
-            </a>
+            <a href="#" className="hover:text-emerald-600">Privacy</a>
+            <a href="#" className="hover:text-emerald-600">Terms</a>
+            <a href="#team" className="hover:text-emerald-600">Team</a>
           </div>
         </div>
       </footer>
@@ -373,7 +365,7 @@ function Case({ title, metric, blurb }: { title: string; metric: string; blurb: 
       <div className="text-sm text-slate-500">{title}</div>
       <div className="mt-2 text-xl font-semibold text-emerald-700">{metric}</div>
       <p className="mt-2 text-slate-600 text-sm">{blurb}</p>
-      <a href="#" className="mt-4 inline-flex items-center gap-2 text-emerald-700 hover:underline text-sm">
+      <a href="/cases/d2c-forecast" className="mt-4 inline-flex items-center gap-2 text-emerald-700 hover:underline text-sm">
         Read more{" "}
         <svg viewBox="0 0 24 24" className="h-4 w-4">
           <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" />
