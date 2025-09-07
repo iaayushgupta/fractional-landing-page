@@ -204,7 +204,6 @@ export default function LandingPage() {
                     {p.tag}
                   </span>
                 </div>
-                <p className="mt-1 text-[#3B516F] text-sm">{p.price}</p>
                 <ul className="mt-4 space-y-2 text-sm text-[#3B516F]">
                   {p.bullets.map((b, i) => (
                     <li key={i} className="flex gap-2">
