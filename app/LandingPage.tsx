@@ -17,7 +17,6 @@ export default function LandingPage() {
   const packages = [
     {
       name: "Data Foundation Sprint",
-      tag: "4–6 weeks • Go-live",
       bullets: [
         "Ingest → dbt models → warehouse (BQ/Snowflake/Postgres)",
         "Data quality tests (Great Expectations) + CI",
@@ -28,7 +27,6 @@ export default function LandingPage() {
     },
     {
       name: "Data Science Accelerator",
-      tag: "4–6 weeks • End-to-end DS",
       bullets: [
         "Scope: classification, regression, forecasting, recommendations",
         "Experimentation & evaluation framework; champion/challenger",
@@ -39,7 +37,6 @@ export default function LandingPage() {
     },
     {
       name: "Quality & Reliability Audit",
-      tag: "2 weeks • Quick wins",
       bullets: [
         "Pipeline & schema review, SLAs, failure modes",
         "Data quality heatmap (Green/Yellow/Red)",
@@ -201,7 +198,6 @@ export default function LandingPage() {
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-semibold">{p.name}</h3>
                   <span className="text-xs rounded-full bg-[#E6F5FF] text-[#0B6BCB] px-2 py-1 border border-[#BFE6FF]">
-                    {p.tag}
                   </span>
                 </div>
                 <ul className="mt-4 space-y-2 text-sm text-[#3B516F]">
