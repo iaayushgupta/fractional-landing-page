@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function LandingPage() {
   // Updated nav to match the new sections
   const nav = [
@@ -82,26 +84,26 @@ export default function LandingPage() {
       <header className="sticky top-0 z-40 backdrop-blur bg-white/80 border-b border-[#DCE7F5]">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="h-16 flex items-center justify-between">
-            <a href="/" className="flex items-center gap-2">
+            <Link href="/" className="flex items-center gap-2">
               <div className="h-8 w-8 rounded-xl bg-[#0B6BCB]/10 ring-1 ring-[#0B6BCB]/20 flex items-center justify-center">
                 <svg viewBox="0 0 24 24" className="h-5 w-5 text-[#0B6BCB]">
                   <path d="M4 17l6-10 4 7 6-9" fill="none" stroke="currentColor" strokeWidth="2" />
                 </svg>
               </div>
               <span className="font-semibold tracking-tight">DataHarness</span>
-            </a>
+            </Link>
             <nav className="hidden md:flex items-center gap-6 text-sm">
               {nav.map((n) => (
-                <a key={n.href} href={n.href} className="hover:text-[#0B6BCB] transition">
+                <Link key={n.href} href={n.href} className="hover:text-[#0B6BCB] transition">
                   {n.label}
-                </a>
+                </Link>
               ))}
-              <a
+              <Link
                 href="#contact"
                 className="inline-flex items-center gap-2 rounded-lg bg-[#12B3FF] hover:bg-[#0AA0E6] text-white px-4 py-2 font-semibold shadow-sm"
               >
                 Talk to us
-              </a>
+              </Link>
             </nav>
           </div>
         </div>
@@ -121,18 +123,18 @@ export default function LandingPage() {
             </p>
 
             <div className="mt-10 flex flex-wrap gap-3">
-              <a
+              <Link
                 href="#packages"
                 className="rounded-xl bg-[#12B3FF] hover:bg-[#0AA0E6] text-white px-6 py-3 font-semibold shadow"
               >
                 Get started
-              </a>
-              <a
+              </Link>
+              <Link
                 href="#case-studies"
                 className="rounded-xl border border-[#0B6BCB] text-[#0B6BCB] px-6 py-3 font-semibold hover:bg-[#0B6BCB]/5"
               >
                 Documentation
-              </a>
+              </Link>
             </div>
 
             {/* KPIs */}
@@ -214,12 +216,12 @@ export default function LandingPage() {
                   ))}
                 </ul>
                 <div className="mt-6 pt-4 border-t border-[#DCE7F5]">
-                  <a
+                  <Link
                     href="#contact"
                     className="inline-flex justify-center rounded-xl bg-[#12B3FF] hover:bg-[#0AA0E6] text-white px-4 py-2 font-semibold w-full"
                   >
                     {p.cta}
-                  </a>
+                  </Link>
                 </div>
               </div>
             ))}
@@ -307,8 +309,8 @@ export default function LandingPage() {
           </div>
         </div>
         <p className="mt-4 text-xs text-[#3B516F]">
-          By contacting us you agree to our <a className="underline hover:text-[#0B6BCB]" href="#">Privacy Policy</a>{" "}
-          and <a className="underline hover:text-[#0B6BCB]" href="#">Terms</a>.
+          By contacting us you agree to our <Link className="underline hover:text-[#0B6BCB]" href="#">Privacy Policy</Link>{" "}
+          and <Link className="underline hover:text-[#0B6BCB]" href="#">Terms</Link>.
         </p>
       </section>
 
@@ -330,9 +332,9 @@ export default function LandingPage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-10 text-sm text-[#3B516F] flex flex-col sm:flex-row items-center justify-between gap-4">
           <div>© {new Date().getFullYear()} DataHarness</div>
           <div className="flex items-center gap-4">
-            <a href="#" className="hover:text-[#0B6BCB]">Privacy</a>
-            <a href="#" className="hover:text-[#0B6BCB]">Terms</a>
-            <a href="#team" className="hover:text-[#0B6BCB]">Team</a>
+            <Link href="#" className="hover:text-[#0B6BCB]">Privacy</Link>
+            <Link href="#" className="hover:text-[#0B6BCB]">Terms</Link>
+            <Link href="#team" className="hover:text-[#0B6BCB]">Team</Link>
           </div>
         </div>
       </footer>
@@ -373,7 +375,7 @@ function Case({ title, metric, blurb }: { title: string; metric: string; blurb: 
       <div className="text-sm text-[#3B516F]">{title}</div>
       <div className="mt-2 text-xl font-semibold text-[#0B6BCB]">{metric}</div>
       <p className="mt-2 text-[#3B516F] text-sm">{blurb}</p>
-      <a
+      <Link
         href="/cases/d2c-forecast"
         className="mt-4 inline-flex items-center gap-2 text-[#0B6BCB] hover:text-[#0A5FB6] text-sm"
       >
@@ -381,7 +383,7 @@ function Case({ title, metric, blurb }: { title: string; metric: string; blurb: 
         <svg viewBox="0 0 24 24" className="h-4 w-4">
           <path d="M5 12h14M13 5l7 7-7 7" fill="none" stroke="currentColor" strokeWidth="2" />
         </svg>
-      </a>
+      </Link>
     </div>
   );
 }
