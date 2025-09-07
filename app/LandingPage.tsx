@@ -18,7 +18,6 @@ export default function LandingPage() {
     {
       name: "Data Foundation Sprint",
       tag: "4–6 weeks • Go-live",
-      price: "US$8k–12k",
       bullets: [
         "Ingest → dbt models → warehouse (BQ/Snowflake/Postgres)",
         "Data quality tests (Great Expectations) + CI",
@@ -30,7 +29,6 @@ export default function LandingPage() {
     {
       name: "Data Science Accelerator",
       tag: "4–6 weeks • End-to-end DS",
-      price: "US$10k–18k",
       bullets: [
         "Scope: classification, regression, forecasting, recommendations",
         "Experimentation & evaluation framework; champion/challenger",
@@ -42,7 +40,6 @@ export default function LandingPage() {
     {
       name: "Quality & Reliability Audit",
       tag: "2 weeks • Quick wins",
-      price: "US$2k–5k",
       bullets: [
         "Pipeline & schema review, SLAs, failure modes",
         "Data quality heatmap (Green/Yellow/Red)",
