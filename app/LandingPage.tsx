@@ -17,6 +17,7 @@ export default function LandingPage() {
   const packages = [
     {
       name: "Data Foundation Sprint",
+
       bullets: [
         "Ingest → dbt models → warehouse (BQ/Snowflake/Postgres)",
         "Data quality tests (Great Expectations) + CI",
@@ -27,6 +28,7 @@ export default function LandingPage() {
     },
     {
       name: "Data Science Accelerator",
+
       bullets: [
         "Scope: classification, regression, forecasting, recommendations",
         "Experimentation & evaluation framework; champion/challenger",
@@ -197,8 +199,6 @@ export default function LandingPage() {
               <div key={p.name} className="rounded-2xl bg-white border border-[#DCE7F5] p-6 shadow-sm flex flex-col">
                 <div className="flex items-center justify-between">
                   <h3 className="text-xl font-semibold">{p.name}</h3>
-                  <span className="text-xs rounded-full bg-[#E6F5FF] text-[#0B6BCB] px-2 py-1 border border-[#BFE6FF]">
-                  </span>
                 </div>
                 <ul className="mt-4 space-y-2 text-sm text-[#3B516F]">
                   {p.bullets.map((b, i) => (
